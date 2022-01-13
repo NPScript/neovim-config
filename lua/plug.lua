@@ -12,9 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
-Plug 'NPScript/scc'
-Plug 'NPScript/vim-zettelkasten'
 Plug 'neovim/nvim-lspconfig'
+Plug 'NPScript/vim-zettelkasten'
 
 vim.call('plug#end')
 

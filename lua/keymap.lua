@@ -22,12 +22,13 @@ vim.api.nvim_set_keymap("n", "<leader>Tc", ":!ctags -R --sort=yes --c++-kins=+p 
 vim.api.nvim_set_keymap("n", "<leader>f", ":Lexplore<CR>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>F", ":Lexplore %:p:h<CR>", {noremap = true})
 
-vim.api.nvim_set_keymap("n", "<leader>z", ":VZKToggle<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>zt", ":VZKFindTag<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>zh", ":VZKHistory<CR>", {noremap = true})
 
 vim.api.nvim_set_keymap("i", "(", "()<Esc>i", {noremap = true})
 vim.api.nvim_set_keymap("i", ")", "<ESC>:call brackify#putbracket(')')<CR>la", {noremap = true})
 vim.api.nvim_set_keymap("i", "[", "[]<Esc>i", {noremap = true})
-vim.api.nvim_set_keymap("i", "]", "<ESC>:call brackify#putbracket('}')<CR>la", {noremap = true})
+vim.api.nvim_set_keymap("i", "]", "<ESC>:call brackify#putbracket(']')<CR>la", {noremap = true})
 vim.api.nvim_set_keymap("i", "{", "{}<Esc>i", {noremap = true})
 vim.api.nvim_set_keymap("i", "}", "<ESC>:call brackify#putbracket('}')<CR>la", {noremap = true})
 vim.cmd('autocmd Filetype html inoremap <buffer> < <><ESC>i')
