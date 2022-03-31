@@ -44,3 +44,7 @@ vim.api.nvim_set_keymap("v", '"', 's"<ESC>pa"', {noremap = true})
 vim.api.nvim_set_keymap("v", "'", "s'<ESC>pa'", {noremap = true})
 vim.cmd('autocmd Filetype c nnoremap <buffer> <tab> :CSelNextArg<Cr>')
 
+vim.cmd('inoremap <expr> <Tab>   pumvisible() ? "\\<C-n>" : "\\<Tab>"')
+vim.cmd('inoremap <expr> <S-Tab> pumvisible() ? "\\<C-p>" : "\\<S-Tab>"')
+
+

@@ -27,12 +27,20 @@ local clangd_on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+  buf_set_keymap('i', '<c-space>', '<c-x><c-o>', opts)
+  buf_set_keymap('i', '::', '::<c-x><c-o>', opts)
+  buf_set_keymap('i', '.', '.<c-x><c-o>', opts)
+  buf_set_keymap('i', '->', '-><c-x><c-o>', opts)
+	buf_set_keymap('i', '<BS>', '<BS><c-x><c-o>', opts);
 end
 
 
 require('lspconfig').clangd.setup{
 	cmd = {
 		"clangd",
+		"--background-index",
+		"--pch-storage=memory",
+		"--all-scopes-completion",
 	},
 	on_attach = clangd_on_attach,
 }
