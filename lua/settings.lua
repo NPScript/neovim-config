@@ -30,7 +30,7 @@ vim.opt.conceallevel = 2
 vim.opt.colorcolumn = "80"
 vim.cmd('filetype indent on')
 
-vim.opt.completeopt = { "menuone", "menu", "longest", "preview" }
+vim.opt.completeopt = { "menuone", "menu", "longest", "preview", "noinsert", "noselect" }
 
 vim.opt.spelllang = { "de_ch", "en_us" }
 

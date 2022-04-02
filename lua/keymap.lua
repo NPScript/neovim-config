@@ -49,3 +49,6 @@ vim.api.nvim_set_keymap("n", "<leader>dn", ":GdbNext", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>ds", ":GdbStep", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>dr", ":GdbRun", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>dc", ":GdbContinue", {noremap = true})
+vim.cmd('inoremap <expr> <Tab>   pumvisible() ? "\\<C-n>" : "\\<Tab>"')
+vim.cmd('inoremap <expr> <S-Tab> pumvisible() ? "\\<C-p>" : "\\<S-Tab>"')
+
