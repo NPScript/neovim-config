@@ -44,3 +44,8 @@ vim.api.nvim_set_keymap("v", '"', 's"<ESC>pa"', {noremap = true})
 vim.api.nvim_set_keymap("v", "'", "s'<ESC>pa'", {noremap = true})
 vim.cmd('autocmd Filetype c nnoremap <buffer> <tab> :CSelNextArg<Cr>')
 
+vim.api.nvim_set_keymap("n", "<leader>dB", ":GdbBreakpointToggle", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>dn", ":GdbNext", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>ds", ":GdbStep", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>dr", ":GdbRun", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>dc", ":GdbContinue", {noremap = true})

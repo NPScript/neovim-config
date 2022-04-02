@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/nathanreiner/Dokumente/ctf'
+let g:netrw_dirhist_0='/home/nathanreiner/Dokumente/ctf/misc'
+let g:netrw_dirhist_9='/home/nathanreiner/Dokumente/ctf'
+let g:netrw_dirhist_8='/home/nathanreiner'
+let g:netrw_dirhist_7='/home/nathanreiner/.config/nvim'
+let g:netrw_dirhist_6='/home/nathanreiner'
+let g:netrw_dirhist_5='/home/nathanreiner/.config/nvim'
+let g:netrw_dirhist_4='/home/nathanreiner'
+let g:netrw_dirhist_3='/home/nathanreiner/Dokumente/C++'
+let g:netrw_dirhist_2='/home/nathanreiner/Dokumente'

@@ -14,6 +14,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'neovim/nvim-lspconfig'
 Plug 'NPScript/vim-zettelkasten'
+Plug 'sakhnik/nvim-gdb'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'jalvesaq/Nvim-R'
 
 vim.call('plug#end')
 
